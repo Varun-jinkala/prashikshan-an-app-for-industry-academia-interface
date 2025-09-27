@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prashiskshan – Academia Industry Interface</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #b8d8f6, #e3f2fd);
+      color: #333;
+      display: flex;
+    }
+
+    /* Sidebar */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background: #003580;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+      box-shadow: 3px 0 10px rgba(0,0,0,0.3);
+    }
+
+    nav a {
+      color: white;
+      padding: 12px 15px;
+      margin: 5px 0;
+      text-decoration: none;
+      width: 100%;
+      text-align: center;
+      transition: background 0.2s;
+      border-radius: 6px;
+    }
+
+    nav a:hover {
+      background: #0056d6;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      width: calc(100% - 200px);
+      background: linear-gradient(135deg, #004aad, #0066ff);
+      color: white;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    /* Main */
+    main {
+      margin-top: 100px;
+      margin-left: 200px;
+      padding: 20px;
+      width: calc(100% - 200px);
+    }
+
+    section {
+      padding: 40px 20px;
+      min-height: 80vh;
+    }
+
+    h2 {
+      color: #004aad;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+      width: 250px;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px;
+      width: 100%;
+      background: #004aad;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    button:hover {
+      background: #0066ff;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+    }
+
+    input, textarea, select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    footer {
+      background: #003580;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav>
+  <a href="#student">Student</a>
+  <a href="#industry">Industry</a>
+  <a href="#faculty">Faculty</a>
+  <a href="#skills">Skills</a>
+  <a href="#logbook">Logbook</a>
+  <a href="#credits">Credits</a>
+  <a href="#notifications">Notifications</a>
+</nav>
+
+<!-- Header -->
+<header>
+  <h1>Prashiskshan – Santhiram Engineering College</h1>
+</header>
+
+<!-- Main -->
+<main>
+  <!-- Student -->
+  <section id="student">
+    <h2>🎓 Student-Centered Internship Portal</h2>
+    <div class="card-container">
+      <div class="card"><h3>Data Science</h3>
+        <a href="https://trainings.internshala.com/data-science-beginner-course/?utm_source=is_web_custom_HP_2"target="_blank"><button>Apply</button></div></a>
+      <div class="card"><h3>Web Development</h3>
+        <a href="https://skillsbuild.org/adult-learners/explore-learning/web-developer"target="_blank"><button>Apply</button></div></a>
+      <div class="card"><h3>Cyber Security</h3>
+        <a href="https://www.coursera.org/professional-certificates/google-cybersecurity?utm_medium=sem&utm_source=gg&utm_campaign=b2c_india_google-cybersecurity_google_ftcof_professional-certificates_cx_dr_bau_gg_sem_pr_in_all_m_hyb_24-03_x&campaignid=20122356860&adgroupid=150743468562&device=c&keyword=cyber%20security%20courses%20online&matchtype=p&network=g&devicemodel=&creativeid=696893433067&assetgroupid=&targetid=kwd-13474713204&extensionid=&placement=&gad_source=1&gad_campaignid=20122356860&gbraid=0AAAAADdKX6ap5rm2_0eBJmIFB_UmEcWCW&gclid=Cj0KCQjwrc7GBhCfARIsAHGcW5Uolzhh9vxDcaR9at4G2ksPdULGmGCTBYxu-ZQaQZR3dr-BVwUwtCAaArQPEALw_wcB"target="_blank"><button>Apply</button></div></a>
+      <div class="card"><h3>Cloud Computing</h3>
+        <a href="https://aws.amazon.com/education/awseducate/?trk=cd0e962f-7a6e-499a-b161-007a2362b83d&sc_channel=ps&ef_id=Cj0KCQjwrc7GBhCfARIsAHGcW5Wsxz3VTtSYGvlIcoX-JNejIiBmNOJBVxYT-XahRQun17wg9T3NtPAaAtAuEALw_wcB:G:s&s_kwcid=AL!4422!3!626310901323!e!!g!!learn%20cloud%20skills!11363780094!141492008345&gad_campaignid=11363780094&gbraid=0AAAAADjHtp_UhZS5ZZr9D3MAtWDW1F5iK&gclid=Cj0KCQjwrc7GBhCfARIsAHGcW5Wsxz3VTtSYGvlIcoX-JNejIiBmNOJBVxYT-XahRQun17wg9T3NtPAaAtAuEALw_wcB"target="_blank"><button>Apply</button></div></a>
+      <div class="card"><h3>Prompt Engineering</h3>
+        <a href="https://www.udemy.com/course/complete-chatgpt-prompt-engineering-course/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Search_DSA_Beta_Prof_la.EN_cc.India_Subs&campaigntype=Search&portfolio=India&language=EN&product=Subs&test=&audience=DSA&topic=&priority=Beta&utm_content=deal4584&utm_term=_._ag_185390584313_._ad_769665429116_._kw__._de_c_._dm__._pl__._ti_dsa-2436670172539_._li_9147224_._pd__._&matchtype=&gad_source=1&gad_campaignid=22900574867&gbraid=0AAAAADROdO201c-dUhIiqMfYHJS-r1uGZ&gclid=Cj0KCQjwrc7GBhCfARIsAHGcW5Vff7UPsTzFoFcnpgq1fiGf-B3s7HpIRmVZe1sVwuFeIUCvaim_nMcaAn9iEALw_wcB&couponCode=PMNVD2025"target="_blank"><button>Apply</button></div></a>
+    </div>
+  </section>
+
+  <!-- Industry -->
+  <section id="industry">
+    <h2>🏢 Industry Collaboration</h2>
+    <form>
+      <input type="text" placeholder="Company Name" required>
+      <input type="text" placeholder="Contact Person" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Internship Details" rows="4"></textarea>
+      <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#sent/KtbxLwGkKgVzXndXVKjFnPtVGRJFqrScgq?compose=new" 
+   target="_blank"
+   style="display:inline-block; padding:10px 20px; background:#007BFF; color:#fff; text-decoration:none; border-radius:5px;">
+  Submit internship details</a>
+    </form></a>
+  </section>
+
+  <!-- Faculty -->
+  <section id="faculty">
+    <h2>👨‍🏫 Faculty & Administration</h2>
+    <form>
+      <input type="text" placeholder="Faculty Name" required>
+      <input type="text" placeholder="Department" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Mentorship Plan" rows="4"></textarea>
+      <a href="https://eb.srecnandyal.edu.in/StudentDetails.php" 
+   target="_blank"
+   style="display:inline-block; padding:10px 20px; background:#007BFF; color:#fff; text-decoration:none; border-radius:5px;">
+   Login as faculty
+</a>
+
+    </form>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>📘 Skill Readiness & Learning Resources</h2>
+    <div class="card-container">
+      <div class="card"><h3>Python</h3>
+       <a href="https://developers.google.com/edu/python?utm_source=chatgpt.com"target="_blank"><button>Start Learning</button></div></a>
+      <div class="card"><h3>SQL</h3>
+        <a href="https://www.udemy.com/topic/sql/free/?srsltid=AfmBOoqtqdaq5lr_uylIJcXYnsBcvkJ36wXhGykNZsASkMVOajBlJb9L&utm_source=chatgpt.com"target="_blank"><button>Start Learning</button></div></a>
+      <div class="card"><h3>C and C++</h3>
+        <a href="https://www.simplilearn.com/free-course-to-learn-cpp-basics-skillup?utm_source=chatgpt.com"target="_blank"><button>Start Learning</button></div></a>
+      <div class="card"><h3>Power BI</h3>
+        <a href="https://data-flair.training/courses/free-power-bi-course-english/?utm_source=chatgpt.com"target="_blank"><button>Start Learning</button></div></a>
+      <div class="card"><h3>Java</h3>
+        <a href="https://www.udemy.com/topic/java/free/?srsltid=AfmBOor_tO7Xii-sJaWBhd71OIT9CMQTMx5SOoH3lNqXv8pF3YEcLv0q&utm_source=chatgpt.com"target="_blank"><button>Start Learning</button></div></a>
+    </div>
+  </section>
+
+  <!-- Logbook -->
+  <section id="logbook">
+    <h2>📝 Logbook & Reports</h2>
+    <form>
+      <input type="text" placeholder="Student Name" required>
+      <input type="date" required>
+      <textarea placeholder="Daily Task Details" rows="5"></textarea>
+      <a href="https://eb.srecnandyal.edu.in/StudentDetails.php" 
+   target="_blank"
+   style="display:inline-block; padding:10px 20px; background:#007BFF; color:#fff; text-decoration:none; border-radius:5px;">
+  Submit Log
+</a>
+
+    </form>
+  </section>
+
+  <!-- Credits -->
+  <section id="credits">
+    <h2>⭐ Credits & Leaderboard</h2>
+    <form>
+      <input type="text" placeholder="Student Name" required>
+      <input type="number" placeholder="Credits Earned" required>
+      <a href="https://ui-patterns.com/patterns/leaderboard" 
+   target="_blank"
+   style="display:inline-block; padding:10px 20px; background:#007BFF; color:#fff; text-decoration:none; border-radius:5px;">
+  Update credits
+</a>
+
+      
+    </form>
+  </section>
+
+  <!-- Notifications -->
+  <section id="notifications">
+    <h2>🔔 Notifications</h2>
+    <form>
+      <input type="text" placeholder="Notification Title" required>
+      <input type="text" placeholder="To whom" required>
+      <textarea placeholder="Message" rows="4"></textarea>
+      <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#sent/KtbxLvgxBgTwgVGCDPNnqstLKtbQwjKbCL" 
+   target="_blank"
+   style="display:inline-block; padding:10px 20px; background:#007BFF; color:#fff; text-decoration:none; border-radius:5px;">
+  Post notification
+</a>
+ </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Prashiskshan | Academia–Industry Connect</p>
+  </footer>
+</main>
+
+<!-- JS -->
+<script>
+  // Basic smooth scrolling
+  document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href"))
+        .scrollIntoView({ behavior: "smooth" });
+    });
+  });
+</script>
+
+</body>
+</html>
